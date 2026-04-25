@@ -466,6 +466,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0}
   Animator: {fileID: 1691199305}
   Renderer: {fileID: 1691199306}
+  isWalk: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
