@@ -1,8 +1,8 @@
 ## 2026-05-16 Update
 ### オブジェクトをマウスの座標に向ける
-[] マウス座標(InputSystem)の取得  
-[] Screen座標(px)からWorld座標(m)の変換  
-[] 2点間の角度を求める  
+- [ ] マウス座標(InputSystem)の取得  
+- [ ] Screen座標(px)からWorld座標(m)の変換  
+- [ ] 2点間の角度を求める  
   
 <img width="484" height="294" alt="as2_lesson01_rec" src="https://github.com/user-attachments/assets/ca280666-f919-48ba-a28a-2b3e8153db56" />
 
