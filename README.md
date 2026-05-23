@@ -1,3 +1,4 @@
+
 ## 2026-05-23 Update
 ### 敵キャラクターの出現と衝突判定
 - [x] プレイヤーを追尾する敵
@@ -5,6 +6,8 @@
 - [x] 敵とプレイヤーとの衝突判定
 - [x] 敵と武器との衝突判定
   
+<img width="416" height="256" alt="nd2_lesson01_20260523_rec" src="https://github.com/user-attachments/assets/2547b5ee-7e18-439c-90a9-16ef7b4e9733" />
+
   
 ## 2026-05-16 Update
 ### オブジェクトをマウスの座標に向ける
