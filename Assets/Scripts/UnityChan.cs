@@ -13,6 +13,8 @@ public class UnityChan : MonoBehaviour
     public Vector3 targetPoint;     // ターゲットの座標値
     public GameObject weapon;       // 武器オブジェクト
 
+    public ParticleSystem footStampEffect;  // 足跡のパーティクルを読み込む
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,7 +47,9 @@ public class UnityChan : MonoBehaviour
 
         // 武器の角度を変える
         weapon.transform.eulerAngles = new Vector3(0, 0, radian * 180 / Mathf.PI);
-        
+
+        // 足跡エフェクトを制御
+        FootStampControl();
     }
 
     // 移動入力イベント
@@ -82,5 +86,26 @@ public class UnityChan : MonoBehaviour
 
         // 変換した値を返す
         return worldPoint;
+    }
+
+    // === 足跡パーティクルの制御
+    // 引数　：なし
+    // 戻り値：なし(void)
+    public void FootStampControl()
+    {
+        // 👉 三項演算子 [ 条件式 ? true : false; ]
+        // 1行で書ける if文　... でも1行でしか書けない...
+        // 制御が1行でできる単純な場合に使用する
+        bool isStamp = Velocity.magnitude > 0.1f ? true : false;
+
+        if(isStamp && !footStampEffect.isPlaying)
+        {   // 動いていれば、エフェクトを出す
+            footStampEffect.Play();
+        }
+        
+        if(!isStamp)
+        {   // 動いてない時は、エフェクトを止める
+            footStampEffect.Stop();
+        }
     }
 }
