@@ -1,4 +1,11 @@
-
+## 2026-05-30 Update
+### UIToolKit と Particle System
+- [x] UIToolKitでの時間表示
+- [x] Particle Systemでの足跡（煙）表現
+  
+<img width="582" height="302" alt="nd2_lesson01_20260530_rec" src="https://github.com/user-attachments/assets/cd9194d7-0faf-4189-abac-1170781cf0ce" />
+  
+  
 ## 2026-05-23 Update
 ### 敵キャラクターの出現と衝突判定
 - [x] プレイヤーを追尾する敵
